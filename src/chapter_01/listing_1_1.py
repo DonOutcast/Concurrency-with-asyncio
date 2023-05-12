@@ -1,6 +1,6 @@
 import requests
 
-response = requests.get("https://www.example.com")
+response = requests.get("https://www.google.ru")
 
 items = response.headers.items()
 
