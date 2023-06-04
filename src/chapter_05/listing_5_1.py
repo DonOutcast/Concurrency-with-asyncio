@@ -1,6 +1,7 @@
 import asyncpg
 import asyncio
 
+
 async def main() -> None:
     connection = await asyncpg.connect(
         host="127.0.0.1",
@@ -12,5 +13,5 @@ async def main() -> None:
     print(f"Подключено! Версия Postgres равна {version}")
     await connection.close()
 
-asyncio.run(main())
 
+asyncio.run(main())

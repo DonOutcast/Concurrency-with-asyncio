@@ -16,7 +16,7 @@ CREATE_PRODUCT_TABLE = \
     """
 
 CREATE_PRODUCT_COLOR_TABLE = \
-    """
+    """ 
     CREATE TABLE IF NOT EXISTS product_color(
         product_color_id SERIAL PRIMARY KEY,
         product_color_name TEXT NOT NULL
