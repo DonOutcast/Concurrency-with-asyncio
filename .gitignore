@@ -159,4 +159,5 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 .idea/
 *.DS_Store
-
+googlebooks-eng-all-1gram-20120701-a
+googlebooks-eng-all-1gram-20120701-a.gz
