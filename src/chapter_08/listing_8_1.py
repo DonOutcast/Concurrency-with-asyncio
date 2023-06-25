@@ -18,11 +18,13 @@ class HTTPGetClientProtocol(asyncio.Protocol):
         request = f"GET / HTTP/1.1\r\n" \
                   f"Connection: close\r\n" \
                   f"Host: {self._host}\r\n\r\n"
+        return request.encode()
 
     def connection_made(self, transport: Transport) -> None:
         print(f"Сделано подключение к {self._host}")
         self._transport = transport
         self._transport.write(self._get_request_bytes())
+
 
     def data_received(self, data: bytes) -> None:
         print(f"Получены данные!")
