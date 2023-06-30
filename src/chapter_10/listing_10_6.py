@@ -11,7 +11,7 @@ async def time(request: Request) -> Response:
     try:
         str_id = request.match_info["id"]
         user_id = int(str_id)
-        db = request.app["DB_KEY"]
+        db = request.app[DB_KEY]
         cart_query = """SELECT product_id FROM user_cart WHERE user_id = $1"""
         result = await db.fetch(cart_query, user_id)
         if result is not None:
